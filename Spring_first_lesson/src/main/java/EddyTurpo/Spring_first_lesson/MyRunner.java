@@ -18,11 +18,13 @@ public class MyRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("Siamo su RUN");
-        //menu.printMenu();
+
         ordine.printOrdineDetails();
         System.out.println("---------------");
         ordine.printContoTavolo();
 
+        System.out.println("Siamo su FINE Conto tavolo");
+        menu.printMenu();
         System.out.println("Siamo su FINE RUN");
     }
 }
